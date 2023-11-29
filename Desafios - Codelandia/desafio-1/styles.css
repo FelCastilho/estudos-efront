@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(to right, #574AE8, #3EA1DB);
+  padding: 20px;
+}
+
+.logo-container {
+  color: white;
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-container {
+  height: 100%;
+  margin-top: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-icon {
+  margin-top: 41px;
+  width: 5%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8274509804);
+  padding: 20px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.box-input {
+  margin-top: 41px;
+  width: 95%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.8274509804);
+  border-radius: 0px 5px 5px 0%;
+}
+
+i {
+  width: 100%;
+}
+
+input {
+  background: none;
+  color: black;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+main {
+  height: 100vh;
+}
+
+article {
+  margin-top: 100px;
+}
+
+div.date-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}/*# sourceMappingURL=styles.css.map */

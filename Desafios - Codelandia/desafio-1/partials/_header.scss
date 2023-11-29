@@ -1,0 +1,54 @@
+header{
+    background-image: linear-gradient(to right, #574AE8, #3EA1DB);
+    padding: 20px;
+}
+
+.logo-container{
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-container{
+    height: 100%;
+    margin-top: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-icon{
+    margin-top: 41px;
+    width: 5%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffffd3;
+    padding: 20px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.box-input{
+    margin-top: 41px;
+    width: 95%;
+    height: 40px;
+    background-color: #ffffffd3;
+    border-radius: 0px 5px 5px 0%;
+}
+
+i{
+    width: 100%;
+}
+
+input{
+    background: none;
+    color: black;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+}
