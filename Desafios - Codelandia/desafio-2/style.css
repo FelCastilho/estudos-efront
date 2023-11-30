@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.ads {
+  padding: 20px;
+  text-align: center;
+  font-family: "Archivo", sans-serif;
+}
+
+.hero-banner {
+  background: url("assets/banner.svg") no-repeat center center;
+  background-size: cover;
+  height: 40vh;
+  width: 100%;
+}
+.hero-banner .hero-text {
+  display: flex;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
