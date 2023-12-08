@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
 
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,7 +8,7 @@
   font-family: "Lexend Deca", sans-serif;
 }
 
-header {
+.header{
   background-image: linear-gradient(to right, #574AE8, #3EA1DB);
   padding: 20px;
 }
@@ -21,6 +21,11 @@ header {
   justify-content: space-between;
 }
 
+.logo-container h3{
+  cursor: pointer;
+  user-select: none;
+}
+
 .blog-container{
   display: flex;
   align-items: center;
@@ -29,22 +34,13 @@ header {
 
 .blog-container h3{
   margin-right: 20px;
-}
-
-.icon-blog{
-  position: absolute;
-  right: 3%;
   cursor: pointer;
 }
 
-#icon-sun{
-  display: none;
-  transition: 0.2s;
-}
-
-#icon-moon{
-  display: block;
-  transition: 0.2s;
+.blog-container i{
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
 }
 
 .search-container {
@@ -73,10 +69,6 @@ header {
   height: 50px;
   background-color: #ffffff48;
   border-radius: 0px 5px 5px 0%;
-}
-
-i{
-  
 }
 
 .icon-text{
@@ -110,7 +102,20 @@ main {
 article {
   padding: 20px;
   margin-top: 100px;
-  border: 3px solid white;
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+
+.article-night{
+  padding: 20px;
+  margin-top: 100px;
+  border: 2px solid #252529;
+  border-radius: 5px;
+  background-color: #17171A;
+}
+
+.article-night:hover{
+  border: 2px solid #E07B67;
 }
 
 article:hover{
@@ -123,8 +128,25 @@ div.date-container {
   justify-content: space-between;
 }
 
-h1 {
+h1{
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
+.header-night{
+  background-color: #17171A;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px){
+
+  .logo-container {
+    justify-content: space-around;
+  }
+
+  .blog-container i{
+    right: 3%;
+  }
+  
+}
+  
