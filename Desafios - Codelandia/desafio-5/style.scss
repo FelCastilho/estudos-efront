@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Archivo&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+@import 'partials/header';
+@import 'partials/layout';
+
+.container{
+    width: 1400px;
+}
+
+
