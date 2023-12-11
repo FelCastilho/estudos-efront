@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Space+Grotesk&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: 0;
+}
+
+.container{
+    width: 1200px;
 }
 
 @import 'partials/header';

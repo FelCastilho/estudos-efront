@@ -1,9 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Space+Grotesk&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: 0;
+}
+
+.container {
+  width: 1200px;
 }
 
 .ads {
@@ -13,12 +17,109 @@
 }
 
 .hero-banner {
-  background: url("assets/banner.svg") no-repeat center center;
+  background: url("assets/banner.svg") no-repeat;
   background-size: cover;
   height: 40vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-banner .container-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 .hero-banner .hero-text {
   display: flex;
+  flex-direction: column;
+  gap: 15px;
   color: white;
+  font-family: "Archivo", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Archivo", sans-serif;
+  padding-bottom: 100px;
+}
+
+.title-container {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+.title-container p {
+  margin-top: 10px;
+  width: 90%;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  gap: 40px;
+}
+.product-container .product img {
+  display: block;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.product-container .product {
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.product-container .product:hover {
+  background-color: rgba(197, 197, 197, 0.616);
+  border-radius: 10px;
+}
+.product-container h3 {
+  margin-bottom: 5px;
+}
+.product-container small {
+  margin-top: 10px;
+  color: #7CA2F4;
+  font-family: "Space Grotesk", sans-serif;
+}
+.product-container p {
+  margin-top: 15px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .title-container h1 {
+    font-size: 1.7rem;
+  }
+  .title-container p {
+    font-size: 1.1rem;
+  }
+  .hero-banner {
+    background-size: cover;
+    height: 50vh;
+    padding: 30px;
+  }
+  .product-container {
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero-banner {
+    background-size: cover;
+    height: 30vh;
+    padding: 50px;
+  }
+  .product-container {
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 350px);
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
