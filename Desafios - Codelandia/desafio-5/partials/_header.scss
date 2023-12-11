@@ -9,6 +9,7 @@ header{
 
 .logo img{
     width: 60%;
+    cursor: pointer;
 }
 
 .social-media{
@@ -21,5 +22,33 @@ header{
         border: 2px solid #fff;
         padding: 15px;
         background-color: #ffffff25;
+        cursor: pointer;
+        transition: all 0.5s;
+        perspective: 1000px;
+    }
+
+    i:hover{
+        background-color: #ffffff6b;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 20vh;
+    }
+    
+    .logo img{
+        width: 40%;
+        display: block;
+        margin: auto;
+        cursor: pointer;
+    }
+    
+    .social-media{
+        display: none;
     }
 }

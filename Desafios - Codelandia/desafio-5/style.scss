@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Archivo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Archivo&family=Open+Sans&family=Roboto&display=swap');
 
 *{
     margin: 0;
@@ -9,6 +9,7 @@
 
 @import 'partials/header';
 @import 'partials/layout';
+@import 'partials/colors';
 
 .container{
     width: 1400px;

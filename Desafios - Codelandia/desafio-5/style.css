@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Andada+Pro&family=Archivo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro&family=Archivo&family=Open+Sans&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +17,7 @@ header {
 
 .logo img {
   width: 60%;
+  cursor: pointer;
 }
 
 .social-media {
@@ -29,14 +30,173 @@ header {
   border: 2px solid #fff;
   padding: 15px;
   background-color: rgba(255, 255, 255, 0.1450980392);
+  cursor: pointer;
+  transition: all 0.5s;
+  perspective: 1000px;
+}
+.social-media i:hover {
+  background-color: rgba(255, 255, 255, 0.4196078431);
 }
 
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 20vh;
+  }
+  .logo img {
+    width: 40%;
+    display: block;
+    margin: auto;
+    cursor: pointer;
+  }
+  .social-media {
+    display: none;
+  }
+}
 body {
   background-image: url("assets/background.svg");
   background-size: cover;
   height: 100vh;
 }
 
+.hero {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .hero-text {
+  width: 30%;
+}
+.hero img {
+  width: 30%;
+  cursor: pointer;
+  animation: float 5s ease-in-out infinite;
+  transition: transform 1s ease-in-out;
+}
+.hero h1, .hero small, .hero p, .hero .trailer-btn {
+  color: #fff;
+}
+.hero small {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.hero h1 {
+  font-family: "Andada Pro", serif;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+.hero p {
+  font-family: "Archivo", sans-serif;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  line-height: 1.5em;
+}
+.hero a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  border-radius: 4px;
+}
+.hero .container-btn {
+  display: flex;
+  gap: 40px;
+}
+.hero .container-btn .play-now {
+  background-color: #F1A5B1;
+  border: 2px solid #F1A5B1;
+  color: #0B0A0A;
+  padding: 10px;
+  width: 40%;
+  text-align: center;
+  transition: 0.3s;
+}
+.hero .container-btn .play-now i {
+  margin-right: 10px;
+}
+.hero .container-btn .play-now:hover {
+  background-color: transparent;
+  border: 2px solid #F1A5B1;
+  color: #F1A5B1;
+}
+.hero .container-btn .trailer-btn {
+  border: 2px solid #F1A5B1;
+  padding: 10px;
+  width: 40%;
+  text-align: center;
+  transition: 0.3s;
+}
+.hero .container-btn .trailer-btn:hover {
+  background-color: #F1A5B1;
+  border: 2px solid #F1A5B1;
+  color: #0B0A0A;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 80vh;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .hero .hero-text {
+    width: 90%;
+  }
+  .hero img {
+    width: 50%;
+    animation: none;
+  }
+  .hero .container-btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero .container-btn .play-now {
+    width: 100%;
+  }
+  .hero .container-btn .trailer-btn {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    height: 80vh;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero .hero-text {
+    width: 50%;
+  }
+  .hero img {
+    width: 50%;
+    animation: none;
+  }
+  .hero .container-btn {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .hero .container-btn .play-now {
+    width: 100%;
+  }
+  .hero .container-btn .trailer-btn {
+    width: 100%;
+  }
+}
 .container {
   width: 1400px;
 }/*# sourceMappingURL=style.css.map */
